@@ -33,7 +33,7 @@ Define the function `kLargest :: Ord a => Int -> [a] -> [a]` such that `kLargest
 
 Consider the data type `data InfBinTree a = Fork a (InfBinTree a) (InfBinTree a)` of infinite binary trees. Further, consider `root (InfBinTree a _ _) = a`.
 
-1. (15 pts) Define the function `treeRepeat :: a -> InfBinTree a` where `treeRepeat x` defines the tree which has `x` at every node. You can see the `Main.hs` file for a hint.
+1. (15 pts) Define the function `treeRepeat :: a -> InfBinTree a` where `treeRepeat x` defines the tree which has `x` at every node. You can see the `test/Spec.hs` file for a hint.
 
 Even if we assume that we have a type on which equality makes sense, we cannot define a (computable) notion of equality among `InfBinTree` since these trees are infinite and we cannot check every node.
 
