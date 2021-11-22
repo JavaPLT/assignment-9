@@ -31,7 +31,7 @@ Define the function `kLargest :: Ord a => Int -> [a] -> [a]` such that `kLargest
 
 ## Problem 4
 
-Consider the data type `data InfBinTree a = Fork a (InfBinTree a) (InfBinTree a)` of infinite binary trees. Further, consider `root (InfBinTree a _ _) = a`.
+Consider the data type `data InfBinTree a = Fork a (InfBinTree a) (InfBinTree a)` of infinite binary trees. Further, consider `root (Fork a _ _) = a`.
 
 1. (15 pts) Define the function `treeRepeat :: a -> InfBinTree a` where `treeRepeat x` defines the tree which has `x` at every node. You can see the `test/Spec.hs` file for a hint.
 
